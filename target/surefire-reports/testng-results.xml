@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" ignored="0" total="20" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="302333" started-at="2022-08-21T18:59:53 EET" finished-at="2022-08-21T19:04:56 EET">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="302333" started-at="2022-08-21T18:59:53 EET" finished-at="2022-08-21T19:04:56 EET">
+      <class name="org.example.testRunner.Runners">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="setUpClass" is-config="true" duration-ms="768" started-at="2022-08-21T18:59:53 EET" finished-at="2022-08-21T18:59:54 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@10fb4575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="18381" started-at="2022-08-21T18:59:54 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:00:12 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User select currency"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to select Euro currency"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="13605" started-at="2022-08-21T19:00:12 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:00:26 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User open facebook page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to follow us"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="11097" started-at="2022-08-21T19:00:26 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:00:37 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User open Twitter page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to follow us"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="15952" started-at="2022-08-21T19:00:37 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:00:53 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User open Youtube page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to follow us"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="12034" started-at="2022-08-21T19:00:53 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:01:05 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User open Rss page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to follow us"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 1, Size: 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+at java.util.ArrayList.get(ArrayList.java:435)
+at org.example.pages.HomePage.openRssNewtab(HomePage.java:88)
+at org.example.stepDefinition.FollowUsStepDefinition.openRssNewtab(FollowUsStepDefinition.java:47)
+at ✽.Rss page will open in new tab(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/FollowUs.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="22596" started-at="2022-08-21T19:01:05 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:01:28 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can hover on one categories then click on sub category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users could hover Categories and select one of sub category successfully"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="20083" started-at="2022-08-21T19:01:28 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:01:48 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User login with valid username and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to login to the system"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ff4292ff0a1face7c11cfa74a4e5f08, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51105/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ff4292ff0a1face7c11cfa74a4e5f08]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ff4292ff0a1face7c11cfa74a4e5f08, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51105/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ff4292ff0a1face7c11cfa74a4e5f08
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.example.stepDefinition.loginStepDefinition.checkMyAccount(loginStepDefinition.java:37)
+at ✽.Myaccount menu displayed(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/Login.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="10898" started-at="2022-08-21T19:01:48 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:01:59 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User login with invalid username and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to login to the system"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="11221" started-at="2022-08-21T19:01:59 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:02:10 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User register with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to register to the system"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="11302" started-at="2022-08-21T19:02:10 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:02:21 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="11232" started-at="2022-08-21T19:02:21 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:02:32 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="11656" started-at="2022-08-21T19:02:32 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:02:44 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="20823" started-at="2022-08-21T19:02:44 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:03:05 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name using sku"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".sku"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [878fc2093be8815eb89e2b68a91d88ff, findElement {using=class name, value=sku}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51250/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 878fc2093be8815eb89e2b68a91d88ff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".sku"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [878fc2093be8815eb89e2b68a91d88ff, findElement {using=class name, value=sku}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51250/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 878fc2093be8815eb89e2b68a91d88ff
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.example.pages.HomePage.assertSerial(HomePage.java:148)
+at org.example.stepDefinition.SearchStepDefinition.validateSearchResultValuesWithSku(SearchStepDefinition.java:58)
+at ✽.user find each result contains word by sku "SCI_FAITH"(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/Search.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="21759" started-at="2022-08-21T19:03:05 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:03:27 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name using sku"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".sku"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14ee20fcf03647546e5c8817d4bdb3cf, findElement {using=class name, value=sku}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51278/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14ee20fcf03647546e5c8817d4bdb3cf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".sku"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14ee20fcf03647546e5c8817d4bdb3cf, findElement {using=class name, value=sku}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51278}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51278/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14ee20fcf03647546e5c8817d4bdb3cf
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.example.pages.HomePage.assertSerial(HomePage.java:148)
+at org.example.stepDefinition.SearchStepDefinition.validateSearchResultValuesWithSku(SearchStepDefinition.java:58)
+at ✽.user find each result contains word by sku "APPLE_CAM"(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/Search.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="13326" started-at="2022-08-21T19:03:27 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:03:40 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name using sku"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="22521" started-at="2022-08-21T19:03:40 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:04:03 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user can search with product-name using sku"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["users can search functionality to get product successfully"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".sku"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e0d9346bb1a1211b510853f73bb822, findElement {using=class name, value=sku}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51331/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e0d9346bb1a1211b510853f73bb822]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".sku"}
+  (Session info: chrome=104.0.5112.101)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'SHAYMAA-ELREFAI', ip: '172.20.10.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e0d9346bb1a1211b510853f73bb822, findElement {using=class name, value=sku}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SHAYMA~1.ELR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51331/devtoo..., se:cdpVersion: 104.0.5112.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e0d9346bb1a1211b510853f73bb822
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+at org.example.pages.HomePage.assertSerial(HomePage.java:148)
+at org.example.stepDefinition.SearchStepDefinition.validateSearchResultValuesWithSku(SearchStepDefinition.java:58)
+at ✽.user find each result contains word by sku "AP_MBP_13"(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/Search.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="8278" started-at="2022-08-21T19:04:03 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:04:11 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User open Nokia slider"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to click on slider"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefinition.SliderStepDefinition.assertCurrentURL(SliderStepDefinition.java:24)
+at ✽.system should open in new tab in URL "Nokia1020"(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/Slider.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="13354" started-at="2022-08-21T19:04:11 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:04:24 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User open Iphone slider"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User should be able to click on slider"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefinition.SliderStepDefinition.assertCurrentURL(SliderStepDefinition.java:28)
+at ✽.system should open in new tab in URL "Iphone"(file:///C:/Javaprojects/EcommerceTesting/src/main/resources/features/Slider.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="11533" started-at="2022-08-21T19:04:24 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:04:36 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User add product to Wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to Wishlist"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="runScenario" duration-ms="19412" started-at="2022-08-21T19:04:36 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-21T19:04:55 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User verify quantity of Wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to Wishlist"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.example.testRunner.Runners@6b57696f]" name="tearDownClass" is-config="true" duration-ms="485" started-at="2022-08-21T19:04:55 EET" finished-at="2022-08-21T19:04:56 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.testRunner.Runners -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

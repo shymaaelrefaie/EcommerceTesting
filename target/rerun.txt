@@ -1,0 +1,4 @@
+file:src/main/resources/features/Login.feature:4
+file:src/main/resources/features/Slider.feature:4:9
+file:src/main/resources/features/FollowUs.feature:24
+file:src/main/resources/features/Search.feature:20:21:23
